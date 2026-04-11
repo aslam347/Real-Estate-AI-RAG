@@ -10,3 +10,4 @@ unstructured
 sentence-transformers
 python-dotenv
 tiktoken
+protobuf==3.20.3
