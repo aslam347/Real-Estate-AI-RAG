@@ -1,0 +1,12 @@
+streamlit
+langchain==0.1.16
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-huggingface
+langchain-groq
+chromadb
+unstructured
+sentence-transformers
+python-dotenv
+tiktoken
