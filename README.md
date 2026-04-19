@@ -1,76 +1,135 @@
-# 🏡 AI Real Estate Intelligence Engine
+# 🏡 AI Real Estate Intelligence Engine  
+### Gen AI + RAG Project using Llama 3.3, GROQ, LangChain & Streamlit
 
-An AI-powered real estate research assistant built using **Retrieval-Augmented Generation (RAG)**.  
-This application allows users to extract insights from real estate articles by simply asking questions.
+An intelligent **AI-powered Real Estate Research Assistant** that analyzes real estate news articles and market reports from live URLs, then answers user questions using **Retrieval-Augmented Generation (RAG)**.
 
----
-
-## 🚀 Live Demo
-🔗 https://your-streamlit-app-link.streamlit.app
+This project helps users quickly understand housing market trends, luxury property pricing, investment insights, and real estate news through conversational AI.
 
 ---
 
-## 🎥 Demo Video
-🔗 https://your-loom-video-link
+# 🌐 Live Demo
+
+🚀 Try the app here:
+
+👉 https://real-estate-ai-rag-mohamed-aslam.streamlit.app/
 
 ---
 
-## 📌 Problem Statement
+# 🎥 Project Demo Video
 
-Analyzing multiple real estate articles manually is time-consuming and inefficient.  
-Users struggle to quickly extract key insights like:
+Watch full explanation and walkthrough:
 
-- Housing prices 📊  
-- Mortgage trends 📉  
-- Market comparisons 🏘️  
+👉 https://www.loom.com/share/45c328b138fe4e6e841d16dc4baee01d
 
 ---
 
-## 💡 Solution
+# 💻 GitHub Repository
 
-This project provides an **AI-powered assistant** that:
-
-- Reads real estate articles from URLs  
-- Stores content in a vector database  
-- Retrieves relevant information using semantic search  
-- Generates accurate answers using LLM  
+👉 https://github.com/aslam347/Real-Estate-AI-RAG
 
 ---
 
-## 🧠 How It Works (RAG Pipeline)
+# 📌 Project Overview
 
-1. Load article data using `WebBaseLoader`  
-2. Split text into chunks  
-3. Convert text into embeddings  
-4. Store embeddings in **ChromaDB**  
-5. Retrieve relevant chunks using similarity search  
-6. Pass context to LLM for final answer generation  
+Users can paste real estate article URLs from websites like:
 
----
+- CNBC  
+- Forbes  
+- Zillow  
+- Realtor.com  
+- HousingWire  
+- MarketWatch  
+- Any public real estate article
 
-## ⚙️ Tech Stack
+The AI system:
 
-- **LangChain** – orchestration  
-- **ChromaDB** – vector database  
-- **HuggingFace Embeddings** – semantic search  
-- **Groq LLM** – fast inference  
-- **Streamlit** – UI & deployment  
-
----
-
-## ✨ Features
-
-- 🔍 Ask questions from real estate articles  
-- ⚡ Fast response using Groq LLM  
-- 🧠 Semantic search with embeddings  
-- 🔗 Source-based answers (no hallucination)  
-- 🎨 Modern UI with cinematic design  
+✅ Extracts article content  
+✅ Converts text into embeddings  
+✅ Stores chunks in vector database  
+✅ Understands user questions  
+✅ Retrieves relevant context  
+✅ Generates intelligent answers with sources
 
 ---
 
-## 📦 Installation (Local Setup)
+# 🚀 Key Features
 
-```bash
-git clone https://github.com/aslam347/Real-Estate-AI-RAG.git
-cd Real-Estate-AI-RAG
-pip install -r requirements.txt
+✅ Live URL article processing  
+✅ AI answers from multiple real estate articles  
+✅ RAG architecture with source grounding  
+✅ Real estate market intelligence engine  
+✅ Investment research assistant  
+✅ Luxury housing trend analysis  
+✅ Source links for transparency  
+✅ Fast responses powered by GROQ  
+✅ Premium Streamlit UI  
+✅ Cloud deployed application
+
+---
+
+# 🧠 Example Questions
+
+- What is happening in the U.S. luxury housing market?  
+- Which cities have the most million-dollar listings?  
+- Summarize this article in simple words  
+- Is the market good for investors now?  
+- Compare two housing market articles  
+- What trends are mentioned in the report?  
+- Which region shows strongest growth?
+
+---
+
+# 🛠️ Tech Stack
+
+- Python  
+- Streamlit  
+- LangChain  
+- GROQ API  
+- Llama 3.3  
+- ChromaDB  
+- HuggingFace Embeddings  
+- BeautifulSoup  
+- WebBaseLoader  
+
+---
+
+# 🏗️ Architecture Flow
+
+```text
+User URLs
+   ↓
+Web Scraping / Loader
+   ↓
+Text Chunking
+   ↓
+Embeddings Generation
+   ↓
+Vector Database
+   ↓
+User Question
+   ↓
+Retriever
+   ↓
+Llama 3.3 via GROQ
+   ↓
+Final AI Answer + Sources
+
+
+
+---
+
+# 📁 Folder Structure
+
+Real-Estate-AI-RAG/
+│── main.py
+│── rag.py
+│── requirements.txt
+│── README.md
+│── .gitignore
+│
+│── resources/
+│   │── screenshots/
+│
+│── venv/
+
+
