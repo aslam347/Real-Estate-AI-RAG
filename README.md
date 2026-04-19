@@ -132,4 +132,54 @@ Real-Estate-AI-RAG/
 │
 │── venv/
 
+---
+
+# 💡 Real Business Use Cases
+
+✅ Real estate market research  
+✅ Property investment intelligence  
+✅ Housing news summarizer  
+✅ Realtor AI assistant  
+✅ Luxury market trend analysis  
+✅ Real estate consulting support  
+✅ Competitive market monitoring  
+
+---
+
+# 🔥 Challenges Solved
+
+During development, this project involved solving real-world engineering issues such as:
+
+- Cloud deployment on Streamlit  
+- ChromaDB compatibility fixes  
+- Git conflict resolution  
+- LLM model migration after deprecation  
+- Live article processing pipeline  
+- Production-ready RAG workflow  
+
+---
+
+# 🙌 Author
+
+## Mohamed Aslam
+
+Passionate about:
+
+- Data Science  
+- Generative AI  
+- AI Agents  
+- Real-world AI products  
+- End-to-end AI deployment  
+
+---
+
+# ⭐ Support
+
+If you found this project useful, please give it a **Star ⭐ on GitHub**.
+
+---
+
+# 📜 License
+
+This project is for educational and portfolio purposes.
 
