@@ -39,7 +39,7 @@ Users can paste real estate article URLs from websites like:
 - Realtor.com  
 - HousingWire  
 - MarketWatch  
-- Any public real estate article
+- Any public real estate article  
 
 The AI system:
 
@@ -48,7 +48,7 @@ The AI system:
 ✅ Stores chunks in vector database  
 ✅ Understands user questions  
 ✅ Retrieves relevant context  
-✅ Generates intelligent answers with sources
+✅ Generates intelligent answers with sources  
 
 ---
 
@@ -63,7 +63,8 @@ The AI system:
 ✅ Source links for transparency  
 ✅ Fast responses powered by GROQ  
 ✅ Premium Streamlit UI  
-✅ Cloud deployed application
+✅ Cloud deployed application  
+✅ Docker containerization support  
 
 ---
 
@@ -75,7 +76,7 @@ The AI system:
 - Is the market good for investors now?  
 - Compare two housing market articles  
 - What trends are mentioned in the report?  
-- Which region shows strongest growth?
+- Which region shows strongest growth?  
 
 ---
 
@@ -90,6 +91,7 @@ The AI system:
 - HuggingFace Embeddings  
 - BeautifulSoup  
 - WebBaseLoader  
+- Docker  
 
 ---
 
@@ -113,24 +115,84 @@ Retriever
 Llama 3.3 via GROQ
    ↓
 Final AI Answer + Sources
-
-
+```
 
 ---
 
 # 📁 Folder Structure
 
+```bash
 Real-Estate-AI-RAG/
-│── main.py
-│── rag.py
-│── requirements.txt
-│── README.md
-│── .gitignore
 │
-│── resources/
-│   │── screenshots/
+├── main.py
+├── rag.py
+├── requirements.txt
+├── Dockerfile
+├── .dockerignore
+├── .gitignore
+├── README.md
 │
-│── venv/
+├── resources/
+│   └── screenshots/
+│
+└── venv/
+```
+
+---
+
+# ⚙️ Installation & Run
+
+```bash
+git clone https://github.com/aslam347/Real-Estate-AI-RAG.git
+cd Real-Estate-AI-RAG
+pip install -r requirements.txt
+streamlit run main.py
+```
+
+---
+
+# 🐳 Docker Containerization
+
+This project is containerized using Docker for easy deployment and sharing.
+
+## Build Docker Image
+
+```bash
+docker build -t real-estate-ai-rag .
+```
+
+## Run Docker Container
+
+```bash
+docker run --env-file .env -p 8501:8501 real-estate-ai-rag
+```
+
+## Open in Browser
+
+```text
+http://localhost:8501
+```
+
+---
+
+# 🐳 Docker Hub
+
+Pull and run directly from Docker Hub:
+
+```bash
+docker pull mohamedaslam2001/real-estate-ai-rag
+docker run --env-file .env -p 8501:8501 mohamedaslam2001/real-estate-ai-rag
+```
+
+---
+
+# 🔐 Environment Variables
+
+Create a `.env` file:
+
+```env
+GROQ_API_KEY=your_groq_api_key
+```
 
 ---
 
@@ -156,6 +218,22 @@ During development, this project involved solving real-world engineering issues 
 - LLM model migration after deprecation  
 - Live article processing pipeline  
 - Production-ready RAG workflow  
+- Docker containerization  
+- Environment variable management  
+
+---
+
+# 📚 Key Learnings
+
+- Retrieval-Augmented Generation (RAG)  
+- LangChain pipeline development  
+- Embedding generation and retrieval  
+- ChromaDB vector database usage  
+- Prompt engineering  
+- GenAI application deployment  
+- Dockerizing AI applications  
+- API key handling using `.env`  
+- Real-world AI system design  
 
 ---
 
@@ -182,4 +260,3 @@ If you found this project useful, please give it a **Star ⭐ on GitHub**.
 # 📜 License
 
 This project is for educational and portfolio purposes.
-
